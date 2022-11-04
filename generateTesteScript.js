@@ -1,5 +1,5 @@
 const _ = require('lodash')
-const dbInJson = require('./dbInJson.json')
+const db = require('./db.json')
 
 function generateLeadAnuncioName() {
   const possiblesAddsId = [1, 2, 3]
@@ -23,7 +23,7 @@ function generateLeadAnuncioName() {
 
   return { anuncioName, decideInicio }
 }
-const indexesLeadsInDb = Object.keys(dbInJson).reduce((acc, lead) => {
+const indexesLeadsInDb = Object.keys(db).reduce((acc, lead) => {
   let onlyIndexes = Number(lead.match(/\d/g))
   acc.push(onlyIndexes)
 
@@ -45,12 +45,12 @@ function changeNameLead(dbOfleads) {
   return { nameChanged, date, numberLead }
 }
 
-console.log(changeNameLead(dbInJson))
+console.log(changeNameLead(db))
 console.log(addNewLeadInDb(changeNameLead))
 
 function addNewLeadInDb(functionWithObjects) {
   return {
-    ...dbInJson,
+    ...db,
     [`lead-${functionWithObjects().numberLead}`]: {
       id: functionWithObjects().numberLead,
       nameCreated: functionWithObjects().nameChanged,
