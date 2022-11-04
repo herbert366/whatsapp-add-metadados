@@ -1,0 +1,18 @@
+{
+  "lead-0": {
+    "id": 0,
+    "nameCreated": "Lead#0 SóOlhinho 03/11",
+    "actualTags": { "anuncioIdActual": 3, "inicioIdActual": 2 }
+  },
+  "lead-1": {
+    "id": 1,
+    "nameCreated": "Lead#1 SóOlhinho 03/11",
+    "actualTags": {
+      "anuncioIdActual": 3,
+      "inicioIdActual": 2,
+      "videoSend": true,
+      "responsePositiveVideo": true,
+      "introduceSell": false
+    }
+  }
+}

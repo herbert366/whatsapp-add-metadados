@@ -1,0 +1,13 @@
+{
+  "anuncioId": [1],
+  "inicioId": [1],
+  "videoSend": 10,
+  "responsePositiveVideo": 3,
+  "ContactToPositiveResponseVideoId": [1],
+  "introduceSell": 3,
+
+  "responseNegativeVideo": 2,
+  "notResponseVideo": 5,
+  "tryRespAfterVideoId": [1],
+  "responseAfterContacted": 3
+}
